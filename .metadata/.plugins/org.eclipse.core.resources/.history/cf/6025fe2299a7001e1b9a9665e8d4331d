@@ -1,0 +1,29 @@
+package contas;
+
+public class Conta {
+	private String titular;
+	private double saldo;
+	private int numero;
+	private int agencia;
+	public Conta(String titular, double saldo, int numero, int agencia ){
+		this.titular=titular;
+		this.saldo=saldo;
+		this.numero=numero;
+		this.agencia=agencia;
+	}
+	//System.out.println("Seu nome: " + titular + " Conta: " + numero + " Seu saldo é: " + saldo);
+			
+	public void deposita(double quantidade){
+		System.out.println(" Depositou " + quantidade);
+		saldo+=quantidade;
+	}
+	public void saca(double saca){
+		System.out.println(" Sacou " + saca);
+	saldo-=saca;
+	}
+	public void saldo(){
+	System.out.printf("Seu nome: " + titular + " Conta: " + numero + " Seu saldo é: " + saldo);
+	}
+	/* . . . Outros métodos . . . */
+	
+}
