@@ -6,7 +6,7 @@ public class Nome {
         int x;
         String nome;
         System.out.println("Digite o seu Nome: ");
-		nome = ler.nextline(); 
+		nome = ler.nextLine(); 
         System.out.println("Ola " + nome);
     }
     
